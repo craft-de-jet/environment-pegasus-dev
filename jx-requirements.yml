@@ -11,7 +11,7 @@ cluster:
   gitKind: github
   gitName: github
   gitServer: https://github.com
-  namespace: jx
+  namespace: ray
   provider: kubernetes
 environments:
 - ingress:
@@ -76,6 +76,6 @@ velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: v1.0.476
+  ref: v1.0.481
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
