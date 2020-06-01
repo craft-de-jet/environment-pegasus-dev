@@ -41,6 +41,7 @@ pipelineConfig:
           image: gcr.io/jenkinsxio/builder-go
         environment:
         - name: DEPLOY_NAMESPACE
+<<<<<<< Updated upstream
           value: ray
         - name: GIT_AUTHOR_NAME
           value: craft-de-jet
@@ -50,6 +51,11 @@ pipelineConfig:
           value: craft.de.jet@gmail.com
         - name: GIT_COMMITTER_EMAIL
           value: craft.de.jet@gmail.com
+||||||| merged common ancestors
+          value: jx
+=======
+          value: ray
+>>>>>>> Stashed changes
         stages:
         - name: release
           options:
