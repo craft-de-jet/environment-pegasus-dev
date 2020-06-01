@@ -42,14 +42,6 @@ pipelineConfig:
         environment:
         - name: DEPLOY_NAMESPACE
           value: ray
-        - name: GIT_AUTHOR_NAME
-          value: craft-de-jet
-        - name: GIT_COMMITTER_NAME
-          value: craft-de-jet
-        - name: GIT_AUTHOR_EMAIL
-          value: craft.de.jet@gmail.com
-        - name: GIT_COMMITTER_EMAIL
-          value: craft.de.jet@gmail.com
         stages:
         - name: release
           options:
