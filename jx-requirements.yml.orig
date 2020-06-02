@@ -4,6 +4,8 @@ autoUpdate:
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-config
 cluster:
   clusterName: pegasus
+  devEnvApprovers:
+  - craft-de-jet
   environmentGitOwner: craft-de-jet
   environmentGitPublic: true
   gitKind: github
@@ -22,6 +24,7 @@ environments:
       enabled: false
       production: false
   key: dev
+  repository: environment-pegasus-dev
 - ingress:
     domain: ""
     externalDNS: false
@@ -31,6 +34,7 @@ environments:
       enabled: false
       production: false
   key: staging
+  repository: environment-pegasus-staging
 - ingress:
     domain: ""
     externalDNS: false
@@ -40,6 +44,7 @@ environments:
       enabled: false
       production: false
   key: production
+  repository: environment-pegasus-production
 gitops: true
 ingress:
   domain: 192.168.1.74.nip.io
@@ -71,6 +76,12 @@ velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: master
+<<<<<<< Updated upstream
+  ref: v1.0.481
+||||||| merged common ancestors
+  ref: "master"
+=======
+  ref: v1.0.482
+>>>>>>> Stashed changes
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
