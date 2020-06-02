@@ -3,6 +3,24 @@ autoUpdate:
   schedule: ""
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-config
 cluster:
+<<<<<<< Updated upstream
+  clusterName: pegasus
+  environmentGitOwner: craft-de-jet
+  environmentGitPublic: true
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: ray
+  provider: kubernetes
+||||||| merged common ancestors
+  clusterName: ""
+  environmentGitOwner: ""
+  environmentGitPublic: false
+  project: ""
+  provider: gke
+  zone: ""
+gitops: true
+=======
   clusterName: pegasus
   devEnvApprovers:
   - craft-de-jet
@@ -13,7 +31,43 @@ cluster:
   gitServer: https://github.com
   namespace: ray
   provider: kubernetes
+>>>>>>> Stashed changes
 environments:
+<<<<<<< Updated upstream
+- ingress:
+    domain: 192.168.1.74.nip.io
+    externalDNS: false
+    ignoreLoadBalancer: true
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
+gitops: true
+||||||| merged common ancestors
+- key: dev
+- key: staging
+- key: production
+=======
 - ingress:
     domain: 192.168.1.74.nip.io
     externalDNS: false
@@ -46,6 +100,7 @@ environments:
   key: production
   repository: environment-pegasus-production
 gitops: true
+>>>>>>> Stashed changes
 ingress:
   domain: 192.168.1.74.nip.io
   externalDNS: false
@@ -77,7 +132,7 @@ velero:
   ttl: ""
 versionStream:
 <<<<<<< Updated upstream
-  ref: v1.0.481
+  ref: master
 ||||||| merged common ancestors
   ref: "master"
 =======
