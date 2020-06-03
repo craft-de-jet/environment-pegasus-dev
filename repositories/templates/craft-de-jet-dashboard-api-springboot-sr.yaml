@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: craft-de-jet
+    provider: github
+    repository: dashboard-api-springboot
+  name: craft-de-jet-dashboard-api-springboot
+spec:
+  description: Imported application for craft-de-jet/dashboard-api-springboot
+  httpCloneURL: https://github.com/craft-de-jet/dashboard-api-springboot.git
+  org: craft-de-jet
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: dashboard-api-springboot
+  scheduler:
+    kind: ""
+    name: ""
+  url: git@github.com:craft-de-jet/dashboard-api-springboot.git
