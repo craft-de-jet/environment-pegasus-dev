@@ -5,3 +5,9 @@ dependencies:
   url: https://github.com/craft-de-jet/dashboard-ui.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: craft-de-jet
+  repo: dashboard-api-springboot
+  url: https://github.com/craft-de-jet/dashboard-api-springboot.git
+  version: ""
+  versionURL: ""
